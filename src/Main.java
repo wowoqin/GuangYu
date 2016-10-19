@@ -6,8 +6,8 @@ public class Main {
 //        String s = "eabcdabcf";
 //        String s = "abcabcbb";
 //        String s = "";
-        String s = "abcdacdefgbcdefabcdef";
-//        String s = "abcdeaecdabefacgbcdecdeaafdbgagfdcbeffcaefdcbdef";
+//        String s = "abcdacdefgbcdefabcdef";
+        String s = "abcdeaecdabefacgbcdecdeaafdbgagfdcbeffcaefdcbdef";
         if(findStr(s)!=null)
             System.out.println(findStr(s).length());
         else System.out.println(0);
