@@ -3,15 +3,18 @@
  */
 public class Main {
     public static void main(String[] args) {
-//        String s = "eabcdabcf";
+        String s = "eabcdabcf";
 //        String s = "abcabcbb";
-        String s = "";
-
-        System.out.println(findStr(s));
+//        String s = "";
+//        String s = "abcdacdefgbcdefabcdef";
+//        String s = "abcdeaecdabefacgbcdecdeaafdbgagfdcbeffcaefdcbdef";
+        if(findStr(s)!=null)
+            System.out.println(findStr(s).length());
+        else System.out.println(0);
     }
-    public  static int findStr(String s){
+    public  static String findStr(String s){
         if(s==null || s.equals("")){
-            return 0;
+            return null;
         }
         //最长重复子串的长度
         int max=0;
@@ -34,7 +37,7 @@ public class Main {
                 res = s.substring(first, first+max);
             }
         }
-        return max;
+        return res;
     }
 }
 
